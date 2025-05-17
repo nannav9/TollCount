@@ -1,6 +1,5 @@
 package com.toll.toll_data.model;
 import java.math.BigDecimal;
-import java.time.LocalDate;
 import java.time.LocalDateTime;
 
 import jakarta.persistence.*;
@@ -12,9 +11,6 @@ import lombok.*;
 @AllArgsConstructor
 public class TransactionDetail {
    
-   
-    
-
     private String barCode;
     private String tagId;
     private String vehicleRegNo;
@@ -22,7 +18,7 @@ public class TransactionDetail {
     @Id
     private String txnId;
     private String laneId;
-@Column(name = "date")
+    @Column(name = "date")
     private LocalDateTime valueDate;
 
     private String narration;
