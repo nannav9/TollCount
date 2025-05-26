@@ -46,7 +46,7 @@ public Map<String, Long> getNarrationCountsByVehicleRegNo(String vehicleRegNo, L
 }
 
 public Map<String, Map<String, Long>> getNarrationCountsPerDateForVehicle(String vehicleRegNo, LocalDateTime startDate, LocalDateTime endDate) {
-    List<Object[]> results = transactionRepo.findNarrationCountsByVehicleAndDate(vehicleRegNo, startDate, endDate);
+    List<Object[]> results = transactionRepo.findNarrationCountsByVehicleRegNo(vehicleRegNo, startDate, endDate);
 
     Map<String, Map<String, Long>> dateWiseNarrationCount = new HashMap<>();
 
